@@ -1,29 +1,251 @@
-
-.nav {
-    background-color: lightcyan;
-    overflow: hidden;
+.over_mij {
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 70ch;
+    font-size: 24px;
 }
-
-
-.nav a {
-    float: left;
-    color: plum;
+.ftbl{
+    display: flex;
+    flex-direction: row !important;
+    color: white;
+    font-size: 24px;
+}
+.Travis{
+    display: flex;
+    flex-direction: row !important;
+    color: white;
+    font-size: 24px;
+}
+.html{
+    color: white;
+    margin-right: auto;
+    max-width: 70ch;
+    font-size: 20px;
+}
+.container {
+    display: flex; /*Activeer flexbox */
+    flex-direction: column; /*Zet de items (children) onder elkaar in een column*/
+    justify-content: center; /*Zet de items VERTICAAL in het midden*/
+    align-items: center; /*Zet de items HORIZONTAAL in het midden*/
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container h1 {
     text-align: center;
-    padding: 14px 16px;
+}
+.container p {
+    margin-top: 20px;
+    width: 50ch; /*1 ch is 1 character*/
+}
+.home {
+    font-size: 24px;
+    max-width: 70ch;
+    margin-right: auto;
+    margin-left: auto;
+}
+table, th, td {
+    border: solid white;
+    border-collapse: collapse;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.cv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%; /*20% van schermbreedte*/
+}
+
+.cv img {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /*100% van zijn parent (.cv class) */
+}
+
+
+h1 {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    Margin-top: auto;
+}
+
+.interesses {
+    margin-right: 300px;
+    margin-left: 300px;
+    font-size: 24px
+}
+
+* {
+    padding: 0;
+    margin: 0;
     text-decoration: none;
-    font-size: 17px;
+    list-style: none;
 }
 
-.nav a:hover {
-    background-color:cadetblue;
-    color: black;
+body {
+    font-family: montserrat;
 }
 
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #663399;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    box-shadow: 0 4px 10px -2px gray;
+    align-items: center;
 
-.nav a.active {
-    background-color: #04AA6D;
+}
+
+label.naam {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    line-height: 80px;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
     color: white;
 }
-body{
-    background-color: aquamarine;
+
+nav li {
+}
+
+nav a {
+    color: white;
+    Font-size: 18px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+
+    border-radius: 3px;
+}
+
+body {
+    background-color: #CBC3E3;
+}
+
+.home {
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+p {
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+.blogs {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.drop-down-menu{
+    cursor: pointer;
+    position: relative;
+}
+.dropped-menu{
+    position: absolute;
+    top: 1em;
+    display: none;
+    flex-direction: column;
+}
+.drop-down-menu a:hover + .dropped-menu, .dropped-menu:hover{
+    background-color: #663399;
+    display: flex;
+}
+
+li> a:hover{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 0.99em 0;
+    transition: all 500ms;
+}
+
+
+/*blog*/
+.blog{
+    display: flex;
+    max-width: 1200px;
+}
+
+.michael_jordan{
+    width: 400px;
+}
+
+.michael_jordan img{
+    width: 100%;
+}
+
+form{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form fieldset{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input[type=text], form input[type=email], form input[type=password]{
+    float: right;
+}
+.hockey{
+    max-width: 795px;
+}
+.h1_h4{
+    color: white;
+    margin-right: auto;
+}
+h4{
+    color: white;
+}
+.hockey img{
+    max-width: 611px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    border: 1px dotted black;
+    margin: 0px 0px 15px 20px;
+    width: 200px;
+    height: 250px;
+}
+.HTML img{
+    max-width: 611px;
+    margin-right: auto;
+    margin-left: auto;
 }
